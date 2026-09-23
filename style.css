@@ -121,10 +121,27 @@ section {
 
 /* ---------- Catalogue ---------- */
 
+.catalog-subtitle {
+  text-align: center;
+  color: var(--gold-soft);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 2.5rem 0 1.25rem;
+}
+
+.catalog-subtitle:first-of-type {
+  margin-top: 0;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
+}
+
+.cards + .catalog-subtitle {
+  margin-top: 3rem;
 }
 
 .card {

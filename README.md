@@ -24,11 +24,24 @@ Comme tu as déjà un compte Stripe, pour chaque formule de lecture :
 
 1. Va sur [dashboard.stripe.com/payment-links](https://dashboard.stripe.com/payment-links).
 2. Clique sur **+ Créer un lien de paiement**.
-3. Crée un produit (ex. "Lecture Express — 20 minutes") avec son prix (ex. 25 €).
+3. Crée un produit (ex. "Lecture privée — 20 minutes") avec son prix, en choisissant
+   **MXN (peso mexicain)** comme devise (assure-toi que MXN est activé dans les
+   paramètres de ton compte Stripe : Paramètres → Devises).
 4. Valide : Stripe te donne une URL du type `https://buy.stripe.com/xxxxxxxx`.
 5. Colle cette URL dans le `href="#"` du bouton "Réserver" correspondant dans `index.html`.
 
-Répète pour chaque formule (20 min, 40 min, 1h, live...). Comme il n'y a pas de créneau
+Les 6 formules déjà présentes dans le site :
+
+| Formule | Durée | Prix |
+|---|---|---|
+| Lecture privée (appel vidéo) | 20 min | 400 MXN |
+| Lecture privée (appel vidéo) | 40 min | 700 MXN |
+| Lecture privée (appel vidéo) | 60 min | 1000 MXN |
+| Lecture live/vidéo | 5 min | 80 MXN |
+| Lecture live/vidéo | 10 min | 150 MXN |
+| Lecture live/vidéo | 20 min | 300 MXN |
+
+Répète la création de lien pour chacune de ces 6 formules. Comme il n'y a pas de créneau
 horaire géré automatiquement, pense à activer, dans les paramètres du lien Stripe,
 la collecte de l'email et éventuellement un champ "message" pour que le client précise
 ses disponibilités — tu le recontacteras ensuite pour fixer l'horaire.
