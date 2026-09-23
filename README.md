@@ -2,6 +2,7 @@
 
 Site statique (HTML/CSS/JS, aucun serveur nécessaire) regroupant :
 - tes liens vers les réseaux sociaux,
+- un bouton de don PayPal,
 - ton catalogue de lectures (20 min, 40 min, 1h, live, ...),
 - un bouton de paiement Stripe pour chaque formule.
 
@@ -10,10 +11,14 @@ Site statique (HTML/CSS/JS, aucun serveur nécessaire) regroupant :
 Ouvre `index.html` et modifie les sections marquées d'un commentaire `👉` :
 
 1. **Header** : ton nom/marque, ta phrase d'accroche, tes liens de réseaux sociaux.
-2. **À propos** : ta présentation.
-3. **Catalogue** : pour chaque formule, le titre, la durée, la description, le prix affiché,
-   et surtout le lien du bouton "Réserver" (voir étape 2 ci-dessous).
-4. **Contact** : ton email.
+2. **Don PayPal** : remplace `https://paypal.me/tonpseudo` par ton vrai lien. Pour
+   l'obtenir, crée un compte sur [paypal.me](https://paypal.me) (lien du type
+   `paypal.me/tonpseudo`) ou génère un lien "Donate" sur
+   [paypal.com/donate](https://www.paypal.com/donate/buttons).
+3. **À propos** : ta présentation.
+4. **Catalogue** : pour chaque formule, le titre, la durée, la description, le prix affiché,
+   et surtout le lien du bouton "Réserver" (voir la section Stripe plus bas).
+5. **Contact** : ton email.
 
 Les couleurs et polices sont dans `style.css` (variables en haut du fichier, section `:root`)
 si tu veux ajuster le thème (violet/or par défaut, ambiance tarot).

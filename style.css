@@ -89,6 +89,26 @@ a {
   background: rgba(212,175,55,0.08);
 }
 
+.donate-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  position: relative;
+  text-decoration: none;
+  font-family: 'Cinzel', serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #1a0f2e;
+  background: var(--gold);
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  transition: background 0.2s ease;
+}
+
+.donate-btn:hover {
+  background: var(--gold-soft);
+}
+
 /* ---------- Sections ---------- */
 
 section {
