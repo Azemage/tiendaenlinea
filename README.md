@@ -10,7 +10,12 @@ Site statique (HTML/CSS/JS, aucun serveur nécessaire) regroupant :
 
 Ouvre `index.html` et modifie les sections marquées d'un commentaire `👉` :
 
-1. **Header** : ton nom/marque, ta phrase d'accroche, tes liens de réseaux sociaux.
+1. **Header** : ton nom/marque, ta phrase d'accroche, tes liens de réseaux sociaux
+   (Instagram, TikTok, TikTok 2, OnlyFans — remplace les `href="#"` par tes vraies
+   URLs). ⚠️ Ne supprime jamais la balise `</a>` de fermeture ni les `</span>` :
+   si un lien reste ouvert, tout le reste de la page se retrouve inclus dedans.
+   Pour ajouter un réseau, copie/colle un bloc `<a class="social-icon">…</a>`
+   entier plutôt que de le modifier à la main.
 2. **Don PayPal** : remplace `https://paypal.me/tonpseudo` par ton vrai lien. Pour
    l'obtenir, crée un compte sur [paypal.me](https://paypal.me) (lien du type
    `paypal.me/tonpseudo`) ou génère un lien "Donate" sur
